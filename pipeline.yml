@@ -1,12 +1,13 @@
 jobs:
 - name: main
   plan:
+  - get: concourse-example
   - task: unit
     file: ./task.yml
 
 resources:
 - name: concourse-example
-  type: docker-image
+  type: git
   source:
-    uri: git@github.com:kdolor-pivotal/concourse-example.git
+    uri: https://github.com/kdolor-pivotal/concourse-example.git
     branch: master
