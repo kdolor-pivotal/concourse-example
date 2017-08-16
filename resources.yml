@@ -1,0 +1,7 @@
+---
+resources:
+- name: concoure-example
+  type: git
+  source:
+    uri: git@github.com:kdolor-pivotal/concourse-example.git
+    branch: master
