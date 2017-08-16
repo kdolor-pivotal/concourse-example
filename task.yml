@@ -7,7 +7,7 @@ image_resource:
     tag: '2.1'
 
 inputs:
-- name: banana-unit
+- name: concourse-example/hello-world.rb
 
 run:
   path: hello-world.rb
