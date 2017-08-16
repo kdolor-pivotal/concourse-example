@@ -2,8 +2,9 @@ jobs:
 - name: main
   plan:
   - get: concourse-example
-  - task: unit
-    file: ./task.yml
+  - task: concourse-example
+    file: concourse-example/task.yml
+  - get: redis-server
 
 resources:
 - name: concourse-example
@@ -11,3 +12,7 @@ resources:
   source:
     uri: https://github.com/kdolor-pivotal/concourse-example.git
     branch: master
+- name: redis-server
+  type: docker-image
+  source:
+    repository: kdolor/redis-server

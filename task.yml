@@ -5,8 +5,8 @@ image_resource:
   source: 
     repository: busybox
 inputs:
-  - name: concourse-example
-
+  - name: hello-world
+  - name: redis-server
 run:
   path: echo
   args: [hello world]
