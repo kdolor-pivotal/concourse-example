@@ -1,0 +1,12 @@
+jobs:
+- name: main
+  plan:
+  - task: unit
+    file: ./task.yml
+
+resources:
+- name: concourse-example
+  type: docker-image
+  source:
+    uri: git@github.com:kdolor-pivotal/concourse-example.git
+    branch: master
