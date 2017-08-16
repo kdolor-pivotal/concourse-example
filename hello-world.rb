@@ -1,1 +1,3 @@
-puts 'Hello, world!'
+#!/bin/sh
+
+print "Hello, world!"

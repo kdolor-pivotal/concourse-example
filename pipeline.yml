@@ -1,6 +1,0 @@
-name: banana-unit
-plan:
-- get: banana
-  trigger: true
-- task: unit
-  file: banana/task.yml
