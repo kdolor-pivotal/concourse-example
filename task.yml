@@ -6,4 +6,4 @@ image_resource:
     repository: busybox
 
 run:
-  path: hello-world.rb
+  path: concourse-example/hello-world.rb
