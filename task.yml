@@ -10,4 +10,4 @@ inputs:
 - name: banana-unit
 
 run:
-  path: concourse-example/hello-world.rb
+  path: hello-world.rb
